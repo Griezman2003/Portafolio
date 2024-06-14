@@ -29,12 +29,7 @@ html{
     justify-content: center;
     align-items: center;
   }
-  
-  .menu li {
-    float: left;
-  }
-
-  
+    
   .menu li a {
     display: block;
     color: white;
