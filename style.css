@@ -76,18 +76,24 @@ html{
 
 /* body del sitio web */
 .body{
+    display: flex;
     padding-top: 30px;
-    text-align: center;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .body > p{
     color: azure;
-    flex-direction: column;
     padding: 5px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 110%;
     text-align: center;
 }
+
 
 
 /* seccion de proyectos  */

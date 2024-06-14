@@ -1,4 +1,4 @@
-const icon = document.querySelector('.menu .icon');
+const icon = document.querySelector('.menu');
 const menuList = document.querySelector('.menu ul');
 
 icon.addEventListener('click', function() {
