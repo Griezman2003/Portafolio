@@ -2,6 +2,9 @@
     margin: 0;
     background-color: #1f3438;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 /* Header sel sitio web */
 .header{
@@ -11,95 +14,62 @@
 
 .menu{
     margin-top: 23px;
-    width: 500px;
-    justify-content: center;
+    width: 455px;
 }
-.lista{
-    color: antiquewhite;
-    padding-right: 40px;
+.menu > ul{
+    text-align:center
+}
+.menu > ul > a{
+    color: azure;
+    text-decoration: none;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.lista a {
-    color:azure;
-    font-size: 110%;
-    text-decoration: none;
-    padding: 7px 7px 7px 7px;
-}
 .logo{
     margin-top: 9px;
-    width: 500px;
-}
-
-.logo div{
+    width: 455px;
     display: flex;
-    margin-left: 100px;
+    justify-content: center;
 }
 
-.logo div img{
-    padding-top: 2px;
-    padding-right: 5px;
+.logo > p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: azure;
+    padding-top: 13px;
+    padding-left: 10px;
 }
+
 .iconos{
     margin-top: 10px;
     color: azure;
-    width: 500;
+    width: 455px;
+    text-align: center;
+    padding-top: 7px;
+    
 }
 
-.iconos ul{
-    margin-top: 8px;
-    margin-left: 75px;
-}
-.iconos ul a {
+.iconos > a {
     padding: 5px 5px 5px 5px;
-}
-.nombre{
-    padding-top: 13px;
-    padding-left: 7px;
-    color:aliceblue;
-    font-size: 110%;
-    font-family: Arial, Helvetica, sans-serif;
+    height: auto;
 }
 
 /* body del sitio web */
 .body{
-    margin-top: 30px;
+    padding-top: 30px;
     text-align: center;
 }
 
-.texto p {
-    padding-top: 10px;
+.body > p{
     color: azure;
+    flex-direction: column;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 110%;
+    text-align: center;
 }
 
-/* .proyecto{
-    color: azure;
-    font-size: 130%;
-    padding-left: 600px;
-    padding-top: 70px;
-    padding-bottom: 40px;
-}
-
-.proyecto1{
-    display: flex;
-    padding-top: 20px;
-    padding-left: 100px;
-    color: azure;
-    padding-bottom: 20px;
-    border-radius: 10px;
-}
-
-.proyecto1 div {
-    color:azure;
-    width: 12%;
-    height: 20px;
-    margin-left: 280px;
-}
-
-.proyecto1 img{
-    border-radius: 20px;
-} */
-
+/* seccion de proyectos  */
 .proyecto {
     margin-top: 50px;
     display: flex;
@@ -133,4 +103,37 @@
     font-size: 16px;
     line-height: 1.6;
     color: azure;
+}
+
+/* responsive para telefonos moviles  */
+@media (max-width: 500px) {
+    .header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+    .iconos{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    }
+}
+
+@media (max-width: 500px) {
+    .logo{
+        padding-top: 10px;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 500px){
+    .menu{
+        display: none;
+    }
 }
