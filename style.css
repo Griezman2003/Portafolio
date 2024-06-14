@@ -1,46 +1,136 @@
 *{
     margin: 0;
-    background-color: rgba(21, 67, 96 );
-}
-.header{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    
+    background-color: #1f3438;
 }
 
-.header img{
-    padding-top: 4px;
+/* Header sel sitio web */
+.header{
+    width: 100%;
+    display: flex; 
 }
+
 .menu{
-    text-align: center;
-    display: flex;
+    margin-top: 23px;
+    width: 500px;
     justify-content: center;
-    width: auto;
 }
 .lista{
-    text-align: center;
-    padding-right: 50px;
-    padding-top: 15px;
     color: antiquewhite;
+    padding-right: 40px;
 }
 
 .lista a {
     color:azure;
-    font-size: 140%;
+    font-size: 110%;
     text-decoration: none;
-    padding: 5px 5px 5px 5px;
+    padding: 7px 7px 7px 7px;
 }
 .logo{
+    margin-top: 9px;
+    width: 500px;
+}
+
+.logo div{
     display: flex;
+    margin-left: 100px;
+}
+
+.logo div img{
+    padding-top: 2px;
+    padding-right: 5px;
 }
 .iconos{
+    margin-top: 10px;
     color: azure;
-    width: 300px;
+    width: 500;
+}
+
+.iconos ul{
+    margin-top: 8px;
+    margin-left: 75px;
+}
+.iconos ul a {
+    padding: 5px 5px 5px 5px;
 }
 .nombre{
-    padding-top: 15px;
+    padding-top: 13px;
     padding-left: 7px;
     color:aliceblue;
-    font-size: 140%;
+    font-size: 110%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* body del sitio web */
+.body{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.texto p {
+    padding-top: 10px;
+    color: azure;
+    font-size: 110%;
+}
+
+/* .proyecto{
+    color: azure;
+    font-size: 130%;
+    padding-left: 600px;
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
+
+.proyecto1{
+    display: flex;
+    padding-top: 20px;
+    padding-left: 100px;
+    color: azure;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+
+.proyecto1 div {
+    color:azure;
+    width: 12%;
+    height: 20px;
+    margin-left: 280px;
+}
+
+.proyecto1 img{
+    border-radius: 20px;
+} */
+
+.proyecto {
+    margin-top: 50px;
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 20px;
+}
+
+.imagen {
+    flex: 1; 
+    margin-right: 50px; 
+    margin-left: 5%;
+}
+
+.imagen img {
+    max-width: 100%;
+    height: auto; 
+    border-radius: 10px;
+}
+
+.contenido {
+    flex: 2;
+}
+
+.contenido h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: azure;
+}
+
+.contenido p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: azure;
 }
