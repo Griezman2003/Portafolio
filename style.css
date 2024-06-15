@@ -154,6 +154,8 @@ html{
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     }
 }
 
@@ -224,16 +226,15 @@ html{
     
     .menu{
         display: none;
-        flex-direction: column; 
-        width: 100%;
+        background-color: azure;
         background-color: #1f3438;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     } 
 
     .menu.show {
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: auto;
+        flex-direction: column;
     }
 }
